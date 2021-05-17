@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* h1 + buttons */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 365px;
+  height: 677px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadToDanish {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(218,41,28);
+}
+
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-between;
+
+
+}
+
+.addNewWord {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.addNewWord:hover{
+  color: white;
+  background-color: rgb(218,41,28);
+}
+
+.practice {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.practice:hover{
+  color: white;
+  background-color: rgb(218,41,28);
+}
