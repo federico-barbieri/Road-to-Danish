@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-/* h1 + buttons */
 
 body {
   display: flex;
@@ -15,6 +14,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* h1 + buttons */
 
 .roadToDanish {
   font-family: "Montserrat", sans-serif;
@@ -41,6 +43,8 @@ body {
 
 }
 
+/* ADD NEW WORD BUTTON */
+
 .addNewWord {
   color: black;
   background-color: white;
@@ -56,6 +60,8 @@ body {
   color: white;
   background-color: rgb(218,41,28);
 }
+
+/* PRACTICE BUTTON */
 
 .practice {
   color: black;
@@ -74,6 +80,8 @@ body {
 }
 
 
+/* FORM */
+
 .formu-juego {
   display: flex;
   flex-direction: column;
@@ -81,6 +89,29 @@ body {
 font-family: "Montserrat", sans-serif;
 opacity: 0;
 }
+
+/* FORM START BUTTON */
+
+.start-practice {
+  color: black;
+  background-color: white;
+  
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.start-practice:hover{
+  color: white;
+  background-color: rgb(218,41,28);
+}
+
+
+/* FORM SUBMIT BUTTON */
 
 .submit-btn-form {
 font-family: "Montserrat", sans-serif;
@@ -96,6 +127,46 @@ cursor: pointer;
   background-color: rgb(218,41,28);
 }
 
+
+/* FORM ENGLISH WORD */
+
 .english-word {
   pointer-events: none;
+}
+
+/* FORM DANISH WORD INPUT */
+
+.danish-word {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  background-color: white;
+  padding: 8px 25px 8px 25px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* FORM - SUBMIT AND VIEW RESULTS BUTTONS */
+
+.submit-viewResultsBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+/* FORM - VIEW RESULTS BUTTON */
+
+.view-results {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px 25px 8px 25px;
+  cursor: pointer;
+}
+
+.view-results:hover {
+  color: white;
+  background-color: rgb(218,41,28);
 }
