@@ -14,7 +14,13 @@ const learntWords = {
   face: "ansigt",
   cup: "kop",
   coffee: "kaffe",
-  milk: "mælk"
+  milk: "maelk",
+  drink: "drikke",
+  kiss: "kysse",
+  mother: "moder",
+  father: "fader",
+  brother: "broder",
+  sister: "søster"
 
 }
 
@@ -27,12 +33,11 @@ var lengthOfObject = Object.keys(learntWords).length;
 // practice button
 const practiceBtn = document.querySelector(".practice");
 //
-// new word button
-const newWord = document.querySelector(".addNewWord");
 
 //
 //
-//
+
+
 
 // form
 const form = document.querySelector('.formu-juego');
@@ -45,11 +50,17 @@ var practiceStartBtn = document.querySelector(".start-practice");
 // danish word input
 var danishWord = document.querySelector(".danish-word");
 //
+danishWord = "";
 // english word
 var englishWord = document.querySelector(".given-english-word");
 //
 //submit your word button
 var submitBtn = document.querySelector(".submit-btn-form");
+//
+//
+//next word button
+const nextWordBtn = document.querySelector(".next-word-btn");
+
 //
 //
 // random number to get a random word from the learnt words
@@ -64,7 +75,8 @@ function randomWord(){
 practiceBtn.addEventListener('click', () => {
   form.style.opacity = "1";
   practiceBtn.style.opacity = "0";
-  newWord.style.opacity = "0";
+  practiceBtn.style.display = "none";
+
 })
 
 
@@ -80,6 +92,8 @@ practiceStartBtn.addEventListener('click', () =>{
   var randomNum = randomWord();
   englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
   counter = randomNum;
+  practiceStartBtn.style.zIndex = "-1";
+  practiceStartBtn.style.opacity= "0";
 })
 //
 //
@@ -95,7 +109,23 @@ submitBtn.addEventListener('click', (e)=> {
     } else {
         alert("not so nice");
       }
+    nextWordBtn.style.zIndex = "1";
+    nextWordBtn.style.opacity = "1";
+    danishWord.value = ""
 })
+
+// event listener for next-word
+
+nextWordBtn.addEventListener('click', (e)=> {
+  event.preventDefault();
+    var randomNum = randomWord();
+  englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
+  counter = randomNum;
+})
+
+
+
+
 
 //
 //
@@ -107,6 +137,7 @@ var viewResultsBtn = document.querySelector('.view-results');
 // counter for the amount of correct words
 var correctWords = 0;
 
+// event listener to view results
 viewResultsBtn.addEventListener('click', () => {
 
   alert("Congratulations! You had " + correctWords + " correct words!")
