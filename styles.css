@@ -5,14 +5,9 @@
 
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 365px;
-  height: 677px;
-  margin-left: auto;
-  margin-right: auto;
+
+
+
 }
 
 
@@ -22,17 +17,30 @@ body {
   font-family: "Montserrat", sans-serif;
   color: rgb(218,41,28);
   font-size: 40px;
+
+
 }
 
 
 .intro-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-
-
+  align-items: center;
+  width: 414px;
+  height: 736px;
+  margin: 0 auto 0 auto;
 }
+
+@media (min-width: 1024px) and (min-height: 600px){
+  .intro-container{
+    width: 80%;
+    height: auto;
+    margin-top: 10%;
+  }
+}
+
+
 
 /* PRACTICE BUTTON */
 
@@ -63,6 +71,15 @@ body {
   align-items: center;
 font-family: "Montserrat", sans-serif;
 opacity: 0;
+
+transform: scale(1.5);
+
+}
+
+@media (min-width: 1024px) and (min-height: 600px){
+  .formu-juego{
+    transform: scale(1);
+  }
 }
 
 /* FORM START BUTTON */
