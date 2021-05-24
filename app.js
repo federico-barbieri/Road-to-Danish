@@ -3,7 +3,7 @@
 
 // object with learnt words
 
-const learntWords = {
+var learntWords = {
   knive: "kniv",
   fork: "gaffel",
   spoon: "ske",
@@ -20,7 +20,76 @@ const learntWords = {
   mother: "moder",
   father: "fader",
   brother: "broder",
-  sister: "søster"
+  sister: "søster",
+  cat: "kat",
+  fish: "fisk",
+  mouse: "mus",
+  cow: "ko",
+  lamb: "lam",
+  horse: "hest",
+  pig: "svin",
+  bird: "fugl",
+  dog: "hund",
+  animal: "dyr",
+  arm: "arm",
+  finger: "finger",
+  knee: "knae",
+  foot: "fod",
+  hair: "hår",
+  house: "hus",
+  door: "dør",
+  monday: "mandag",
+  tuesday: "tirsdag",
+  wednesday: "onsdag",
+  thursday: "torsdag",
+  friday: "fredag",
+  saturday: "lørdag",
+  sunday: "søndag",
+  january: "januar",
+  february: "februar",
+  march: "marts",
+  april: "april",
+  may: "maj",
+  june: "juni",
+  july: "juli",
+  august: "august",
+  september: "september",
+  october: "oktober",
+  november: "november",
+  december: "december",
+  city: "by",
+  street: "gade",
+  airport: "lufthavn",
+  hotel: "hotel",
+  restaurant: "restaurant",
+  church: "kirke",
+  market: "marked",
+  hospital: "hospital",
+  university: "universitet",
+  school: "skole",
+  book: "bog",
+  window: "vindue",
+  color: "farve",
+  red: "rød",
+  blue: "blå",
+  green: "grøn",
+  yellow: "gul",
+  black: "sort",
+  white: "hvid",
+  sea: "hav",
+  river: "flod",
+  lake: "sø",
+  mountain: "bjerg",
+  rain: "regn",
+  snow: "sne",
+  tree: "trae",
+  flower: "blomst",
+  sun: "sol",
+  moon: "måne",
+  wind: "vind",
+  sky: "himmel",
+  fire: "ild",
+  ice: "is"
 
 }
 
@@ -50,7 +119,7 @@ var practiceStartBtn = document.querySelector(".start-practice");
 // danish word input
 var danishWord = document.querySelector(".danish-word");
 //
-danishWord = "";
+
 // english word
 var englishWord = document.querySelector(".given-english-word");
 //
@@ -102,22 +171,24 @@ practiceStartBtn.addEventListener('click', () =>{
 submitBtn.addEventListener('click', (e)=> {
   event.preventDefault();
 
-  if (danishWord.value == Object.values(learntWords)[counter]){
+  if (danishWord.value === Object.values(learntWords)[counter]){
 
       alert("NICEEEEE!");
       correctWords+=1;
     } else {
         alert("not so nice");
+        alert("Correct word: " + Object.values(learntWords)[counter]);
       }
     nextWordBtn.style.zIndex = "1";
     nextWordBtn.style.opacity = "1";
-    danishWord.value = ""
+    danishWord.value = "";
 })
 
 // event listener for next-word
 
 nextWordBtn.addEventListener('click', (e)=> {
   event.preventDefault();
+
     var randomNum = randomWord();
   englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
   counter = randomNum;
@@ -139,7 +210,9 @@ var correctWords = 0;
 
 // event listener to view results
 viewResultsBtn.addEventListener('click', () => {
-
+  if (correctWords == 0){
+    alert("Oh, you had 0 correct words")
+  } else {
   alert("Congratulations! You had " + correctWords + " correct words!")
-
+}
 })
