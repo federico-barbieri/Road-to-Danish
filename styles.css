@@ -177,3 +177,19 @@ cursor: pointer;
   color: white;
   background-color: rgb(218,41,28);
 }
+
+@media only screen and (min-width: 768px){
+  body{
+    height: 50rem;
+  }
+  .intro-container{
+    height: 48rem;
+    margin: 1rem auto 0 auto;
+  }
+  .roadToDanish{
+    margin: 10rem auto 1rem auto;
+  }
+  .formu-juego{
+    transform: scale(2) translateY(5rem);
+  }
+}
