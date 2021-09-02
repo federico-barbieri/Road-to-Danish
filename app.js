@@ -1,4 +1,6 @@
 
+// DANISH LETTERS
+// æ ø å
 
 
 // object with learnt words
@@ -142,8 +144,7 @@ var learntWords = {
 
 
 }
-æ
-ø
+
 
 // length of my object
 var lengthOfObject = Object.keys(learntWords).length;
