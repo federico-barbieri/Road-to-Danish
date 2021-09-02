@@ -12,7 +12,7 @@ body {
 max-width: 100%;
 background: rgb(255,255,255);
 background: linear-gradient(325deg, rgba(255,255,255,1) 0%, rgba(218,41,28,1) 80%);
-height: 100rem;
+height: 50rem;
 }
 
 .intro-container {
@@ -21,7 +21,7 @@ height: 100rem;
   justify-content: flex-start;
   align-items: center;
   width: 90%;
-  height: 80rem;
+  height: 45rem;
   margin: 1rem auto 1rem auto;
   overflow: hidden;
 }
