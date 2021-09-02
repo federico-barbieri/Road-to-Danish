@@ -117,9 +117,33 @@ var learntWords = {
   move: 'flytter',
   moved: 'flyttede',
   have_moved: 'har flyttet',
-    
+  think: 'tror',
+  thought: 'troede',
+  have_thought: 'har troet',
+  do: 'gør',
+  did: 'gjorde',
+  have_done: 'har gjort',
+  mean: 'betyder',
+  meant: 'betød',
+  have_meant: 'har betydet',
+  work: 'arbejder',
+  worked: 'arbejdede',
+  have_worked: 'har arbejdet',
+  tell: 'fortæller',
+  told: 'fortalte',
+  have_told: 'har fortalt',
+  play: 'spiller',
+  played: 'spillede',
+  have_played: 'har spillet',
+  read_present: 'læser',
+  read_past: 'læste',
+  have_read: 'har læst',
+  
+
 
 }
+æ
+ø
 
 // length of my object
 var lengthOfObject = Object.keys(learntWords).length;
