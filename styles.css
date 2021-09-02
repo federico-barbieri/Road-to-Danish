@@ -68,7 +68,7 @@ height: 100rem;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   display: none;
-  transform: scale(3);
+  transform: scale(1);
   margin: 15rem auto 1rem auto;
   color: white;
 }
