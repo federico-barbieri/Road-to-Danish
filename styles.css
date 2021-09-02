@@ -22,7 +22,7 @@ height: 100rem;
   align-items: center;
   width: 90%;
   height: 80rem;
-  margin: 5rem auto 1rem auto;
+  margin: 1rem auto 1rem auto;
   overflow: hidden;
 }
 
@@ -34,7 +34,7 @@ height: 100rem;
   color: rgb(255,255,255);
   font-size: 4rem;
   text-align: center;
-  margin: 1rem auto 1rem auto;
+  margin: 2rem auto 1rem auto;
 }
 
 
@@ -51,7 +51,7 @@ height: 100rem;
   opacity: 1;
   text-align: center;
   font-size: 2rem;
-  margin: 5rem auto 2rem auto;
+  margin: 3rem auto 2rem auto;
 }
 
 .practice:hover{
