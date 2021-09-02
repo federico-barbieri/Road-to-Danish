@@ -149,6 +149,7 @@ cursor: pointer;
   border: none;
   border-bottom: 1px solid black;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 
 /* FORM - SUBMIT AND VIEW RESULTS BUTTONS */
