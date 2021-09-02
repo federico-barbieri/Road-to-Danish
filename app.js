@@ -89,7 +89,35 @@ var learntWords = {
   wind: "vind",
   sky: "himmel",
   fire: "ild",
-  ice: "is"
+  ice: "is",
+  have: 'har',
+  had: 'havde',
+  have_had: 'har haft',
+  be: 'er',
+  was: 'var',
+  have_been: 'har vaeret',
+  eat: 'spiser',
+  ate: 'spiste',
+  have_eaten: 'har spist',
+  see: 'ser',
+  saw: 'så',
+  have_seen: 'har set',
+  travel: 'rejser',
+  travelled: 'rejste',
+  have_travelled: 'har rejst',
+  take: 'tager',
+  took: 'tog',
+  have_taken: 'har taget',
+  run: 'løber',
+  ran: 'løb',
+  have_run: 'har løbet',
+  live: 'bor',
+  lived: 'boed',
+  have_lived: 'har boet',
+  move: 'flytter',
+  moved: 'flyttede',
+  have_moved: 'har flyttet',
+    
 
 }
 
@@ -212,6 +240,8 @@ var correctWords = 0;
 viewResultsBtn.addEventListener('click', () => {
   if (correctWords == 0){
     alert("Oh, you had 0 correct words")
+  } else if (correctWords == 1){
+    alert('Congratulations! You had 1 correct word')
   } else {
   alert("Congratulations! You had " + correctWords + " correct words!")
 }
