@@ -67,7 +67,7 @@ height: 100rem;
   flex-direction: column;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  opacity: 0;
+  display: none;
   transform: scale(3);
   margin: 3rem auto 1rem auto;
   color: white;

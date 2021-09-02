@@ -138,7 +138,7 @@ var learntWords = {
   read_present: 'læser',
   read_past: 'læste',
   have_read: 'har læst',
-  
+
 
 
 }
@@ -194,7 +194,7 @@ function randomWord(){
 //
 // event listener to practice
 practiceBtn.addEventListener('click', () => {
-  form.style.opacity = "1";
+  form.style.display = "flex";
   practiceBtn.style.opacity = "0";
   practiceBtn.style.display = "none";
 
