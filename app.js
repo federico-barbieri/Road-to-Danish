@@ -267,8 +267,8 @@ viewResultsBtn.addEventListener('click', () => {
   if (correctWords == 0){
     alert("Oh, you had 0 correct words")
   } else if (correctWords == 1){
-    alert('Congratulations! You had 1 correct word in a row')
+    alert('Congratulations! You had 1 correct word today')
   } else {
-  alert("Congratulations! You had " + correctWords + " correct words in a row!")
+  alert("Congratulations! You had " + correctWords + " correct words today!")
 }
 })
