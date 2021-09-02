@@ -149,7 +149,8 @@ var learntWords = {
 // length of my object
 var lengthOfObject = Object.keys(learntWords).length;
 
-//
+// MAIN title
+const mainTitle = document.querySelector('.roadToDanish');
 //
 
 // practice button
@@ -195,8 +196,8 @@ function randomWord(){
 //
 // event listener to practice
 practiceBtn.addEventListener('click', () => {
+  mainTitle.style.display = 'none';
   form.style.display = "flex";
-  practiceBtn.style.opacity = "0";
   practiceBtn.style.display = "none";
 
 })
