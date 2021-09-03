@@ -185,6 +185,8 @@ var submitBtn = document.querySelector(".submit-btn-form");
 const nextWordBtn = document.querySelector(".next-word-btn");
 
 //
+// view results button
+var viewResultsBtn = document.querySelector('.view-results');
 //
 // random number to get a random word from the learnt words
 function randomWord(){
@@ -199,6 +201,7 @@ practiceBtn.addEventListener('click', () => {
   mainTitle.style.display = 'none';
   form.style.display = "flex";
   practiceBtn.style.display = "none";
+  viewResultsBtn.style.display = 'none';
 
 })
 
@@ -211,6 +214,8 @@ var counter = 0;
 
 // event listener after pressing "start"
 practiceStartBtn.addEventListener('click', () =>{
+
+
 
   var randomNum = randomWord();
   englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
@@ -254,10 +259,8 @@ nextWordBtn.addEventListener('click', (e)=> {
 
 //
 //
-// view results
 
-// view results button
-var viewResultsBtn = document.querySelector('.view-results');
+
 
 // counter for the amount of correct words
 var correctWords = 0;
