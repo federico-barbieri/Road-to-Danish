@@ -91,7 +91,7 @@ var learntWords = {
   wind: "vind",
   sky: "himmel",
   fire: "ild",
-  ice: "is",
+  ice_cream: "is",
   have: 'har',
   had: 'havde',
   have_had: 'har haft',
@@ -140,7 +140,15 @@ var learntWords = {
   read_present: 'læser',
   read_past: 'læste',
   have_read: 'har læst',
-
+  swim: 'svømmer',
+  swam: 'svømmede',
+  have_swam: 'har svømmet',
+  draw: 'tegner',
+  drew: 'tegnede',
+  have_drawn: 'har tegnet',
+  love: 'elsker',
+  loved: 'elskede',
+  have_loved: 'har elsket'
 
 
 }
@@ -241,7 +249,12 @@ submitBtn.addEventListener('click', (e)=> {
     nextWordBtn.style.zIndex = "1";
     nextWordBtn.style.opacity = "1";
     danishWord.value = "";
+
+    if (counter == 10){
+      viewResultsBtn.style.display = 'absolute';
+    }
 })
+
 
 // event listener for next-word
 
