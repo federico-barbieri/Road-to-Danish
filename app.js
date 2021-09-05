@@ -148,7 +148,10 @@ var learntWords = {
   have_drawn: 'har tegnet',
   love: 'elsker',
   loved: 'elskede',
-  have_loved: 'har elsket'
+  have_loved: 'har elsket',
+  hate: 'hader',
+  hated: 'hadede',
+  have_hated: 'har hadet'
 
 
 }
