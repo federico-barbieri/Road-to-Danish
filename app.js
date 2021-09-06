@@ -288,7 +288,7 @@ viewResultsBtn.addEventListener('click', () => {
     correctWords = 0;
     wrongWords = 0;
   } else {
-  alert(`You had ${correctWords} words and ${wrongWords} words today.`);
+  alert(`You had ${correctWords} correct words and ${wrongWords} wrong words today.`);
   mainTitle.style.display = 'inline-block';
   practiceBtn.style.display = "inline";
   viewResultsBtn.style.display = 'none';
