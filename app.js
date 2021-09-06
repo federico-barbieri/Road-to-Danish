@@ -241,7 +241,7 @@ practiceBtn.addEventListener('click', () => {
 submitBtn.addEventListener('click', (e)=> {
   event.preventDefault();
 
-  danishWord.value.trim('');
+  danishWord.value.trim(' ');
 
   if ((danishWord.value.toLowerCase()) === Object.values(learntWords)[counter]){
 
