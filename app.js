@@ -177,19 +177,18 @@ const practiceBtn = document.querySelector(".practice");
 const form = document.querySelector('.formu-juego');
 
 
-// start practicing button
-var practiceStartBtn = document.querySelector(".start-practice");
+
 //
 //
 // danish word input
-var danishWord = document.querySelector(".danish-word");
+const danishWord = document.querySelector(".danish-word");
 //
 
 // english word
-var englishWord = document.querySelector(".given-english-word");
+let englishWord = document.querySelector(".given-english-word");
 //
 //submit your word button
-var submitBtn = document.querySelector(".submit-btn-form");
+let submitBtn = document.querySelector(".submit-btn-form");
 //
 //
 //next word button
@@ -197,7 +196,7 @@ const nextWordBtn = document.querySelector(".next-word-btn");
 
 //
 // view results button
-var viewResultsBtn = document.querySelector('.view-results');
+let viewResultsBtn = document.querySelector('.view-results');
 //
 // random number to get a random word from the learnt words
 function randomWord(){
@@ -206,6 +205,17 @@ function randomWord(){
 
 //
 //
+// counts every attempt since beginning of the round
+let attempts = 0;
+
+// counter for the amount of correct words
+let correctWords = 0;
+
+// counter for the amount of wrong words
+let wrongWords = 0;
+
+// counter that glues A: the position of the word in the object with B: the position of the key as a danish word
+let counter = 0;
 //
 // event listener to practice
 practiceBtn.addEventListener('click', () => {
@@ -213,27 +223,17 @@ practiceBtn.addEventListener('click', () => {
   form.style.display = "flex";
   practiceBtn.style.display = "none";
   viewResultsBtn.style.display = 'none';
-
+  let randomNum = randomWord();
+  englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
+  counter = randomNum;
 })
 
 
-// counter that glues A: the position of the word in the object with B: the position of the key as a danish word
-var counter = 0;
+
 
 //
 
 
-// event listener after pressing "start"
-practiceStartBtn.addEventListener('click', () =>{
-
-
-
-  var randomNum = randomWord();
-  englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
-  counter = randomNum;
-  practiceStartBtn.style.zIndex = "-1";
-  practiceStartBtn.style.opacity= "0";
-})
 //
 //
 // event listener to submit your word
@@ -245,49 +245,55 @@ submitBtn.addEventListener('click', (e)=> {
 
       alert("NICEEEEE!");
       correctWords+=1;
+      attempts += 1;
+      let randomNum = randomWord();
+      englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
+      counter = randomNum;
     } else {
         alert("not so nice");
         alert("Correct word: " + Object.values(learntWords)[counter]);
+        let randomNum = randomWord();
+        englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
+        counter = randomNum;
+        attempts +=1;
+        wrongWords +=1;
       }
-    nextWordBtn.style.zIndex = "1";
-    nextWordBtn.style.opacity = "1";
     danishWord.value = "";
 
-    if (counter == 10){
-      viewResultsBtn.style.display = 'absolute';
+    if (attempts == 5){
+      viewResultsBtn.style.display = 'inline';
+      form.style.display = "none";
     }
 })
 
-
-// event listener for next-word
-
-nextWordBtn.addEventListener('click', (e)=> {
-  event.preventDefault();
-
-    var randomNum = randomWord();
-  englishWord.innerHTML = "English word: " + Object.keys(learntWords)[randomNum];
-  counter = randomNum;
-})
-
-
-
-
-
 //
 //
-
-
-
-// counter for the amount of correct words
-var correctWords = 0;
 
 // event listener to view results
 viewResultsBtn.addEventListener('click', () => {
   if (correctWords == 0){
-    alert("Oh, you had 0 correct words")
+    alert("Oh, you had 0 correct words. Give it another shot!")
+    mainTitle.style.display = 'inline-block';
+    practiceBtn.style.display = "inline";
+    viewResultsBtn.style.display = 'none';
+    attempts = 0;
+    correctWords = 0;
+    wrongWords = 0;
   } else if (correctWords == 1){
-    alert('Congratulations! You had 1 correct word today')
+    alert( `You had 1 correct word and ${wrongWords} wrong words today.`);
+    mainTitle.style.display = 'inline-block';
+    practiceBtn.style.display = "inline";
+    viewResultsBtn.style.display = 'none';
+    attempts = 0;
+    correctWords = 0;
+    wrongWords = 0;
   } else {
-  alert("Congratulations! You had " + correctWords + " correct words today!")
+  alert(`You had ${correctWords} words and ${wrongWords} words today.`);
+  mainTitle.style.display = 'inline-block';
+  practiceBtn.style.display = "inline";
+  viewResultsBtn.style.display = 'none';
+  attempts = 0;
+  correctWords = 0;
+  wrongWords = 0;
 }
 })
