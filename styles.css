@@ -96,7 +96,7 @@ cursor: pointer;
 
 .english-word {
   pointer-events: none;
-  width: 3rem;
+  width: 5rem;
 }
 
 /* FORM DANISH WORD INPUT */
