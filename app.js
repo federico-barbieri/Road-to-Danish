@@ -5,7 +5,7 @@
 
 // object with learnt words
 
-var learntWords = {
+let learntWords = {
   knive: "kniv",
   fork: "gaffel",
   spoon: "ske",
@@ -137,8 +137,8 @@ var learntWords = {
   play: 'spiller',
   played: 'spillede',
   have_played: 'har spillet',
-  read_present: 'læser',
-  read_past: 'læste',
+  read_present_tense: 'læser',
+  read_past_tense: 'læste',
   have_read: 'har læst',
   swim: 'svømmer',
   swam: 'svømmede',
