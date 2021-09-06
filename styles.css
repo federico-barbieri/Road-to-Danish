@@ -127,7 +127,7 @@ cursor: pointer;
   cursor: pointer;
   opacity: 1;
   text-align: center;
-  margin: 20rem auto 2rem auto;
+  margin: 10rem auto 2rem auto;
   display: none;
   position: absolute;
   font-size: 2rem;
@@ -152,5 +152,8 @@ cursor: pointer;
   }
   .formu-juego{
     transform: scale(2) translateY(5rem);
+  }
+  .view-results{
+      margin: 20rem auto 2rem auto;
   }
 }
