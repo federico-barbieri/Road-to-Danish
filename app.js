@@ -151,8 +151,10 @@ let learntWords = {
   have_loved: 'har elsket',
   hate: 'hader',
   hated: 'hadede',
-  have_hated: 'har hadet'
-
+  have_hated: 'har hadet',
+  håber: 'hope',
+  håvede: 'hoped',
+  har_håbet: 'have hoped'
 
 }
 
@@ -214,7 +216,7 @@ let correctWords = 0;
 // counter for the amount of wrong words
 let wrongWords = 0;
 
-// counter that glues A: the position of the word in the object with B: the position of the key as a danish word
+// counter that glues the position of the word in the object with the position of the key as a danish word
 let counter = 0;
 //
 // event listener to practice
