@@ -154,7 +154,9 @@ let learntWords = {
   have_hated: 'har hadet',
   håber: 'hope',
   håvede: 'hoped',
-  har_håbet: 'have hoped'
+  har_håbet: 'have hoped',
+  nabo: 'neighbor',
+  uge: 'week'
 
 }
 
