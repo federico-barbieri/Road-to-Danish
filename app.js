@@ -156,7 +156,8 @@ let learntWords = {
   håvede: 'hoped',
   har_håbet: 'have hoped',
   nabo: 'neighbor',
-  uge: 'week'
+  uge: 'week',
+  mødet: 'meeting'
 
 }
 
