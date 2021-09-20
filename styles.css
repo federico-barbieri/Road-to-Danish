@@ -1,161 +1,115 @@
 *{
+  paddin: 0;
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 html{
   font-size: 20px;
 }
 
+/* INTRO */
 
-body {
-max-width: 100%;
-background: rgb(255,255,255);
-background: linear-gradient(325deg, rgba(255,255,255,1) 0%, rgba(218,41,28,1) 80%);
-height: 30rem;
-}
-
-.intro-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 90%;
-  height: 29rem;
-  margin: 1rem auto 0 auto;
+#intro{
+  width: 100%;
+  height: 50rem;
+  background-color: rgb(218, 41, 28);
   overflow: hidden;
 }
 
-
-/* h1 + buttons */
-
-.roadToDanish {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(255,255,255);
-  font-size: 4rem;
-  text-align: center;
-  margin: 2rem auto 1rem auto;
-}
-
-
-/* START BUTTON */
-
-.practice {
-  color: black;
+.horizontal-rectangle{
+  width: 90rem;
+  height: 10rem;
   background-color: white;
-  border-radius: 2rem;
-  border: 1px solid black;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
-  opacity: 1;
+  z-index: 5;
+  animation-name: rectanglehor;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.1s;
+}
+
+.vertical-rectangle{
+  width: 10rem;
+  height: 50rem;
+  background-color: white;
+  z-index: 6;
+  animation-name: rectanglever;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rectanglehor{
+  0% {transform: translate(-90rem, 1rem);}
+  25% {transform: translate(-45rem, 1rem);}
+  50% {transform: translate(0rem, 1rem);}
+  75% {transform: translate(45rem, 1rem);}
+  100% {transform: translate(90rem, 1rem);}
+}
+
+@keyframes rectanglever{
+  0% {transform: translate(10rem, -70rem);}
+  25% {transform: translate(10rem, -35rem);}
+  50% {transform: translate(10rem, 0rem);}
+  75% {transform: translate(10rem, 35rem);}
+  100% {transform: translate(10rem, 50rem);}
+}
+
+.intro-main-title{
+  display: inline-block;
+  font-size: 6rem;
+  margin: 1rem auto 1rem auto;
+  text-shadow: 5px 2px white;
   text-align: center;
-  font-size: 2rem;
-  margin: 3rem auto 2rem auto;
+  font-family: 'Timmana', sans-serif;
+  font-stretch: semi-expanded;
 }
 
-.practice:hover{
-  color: white;
-  background-color: rgb(218,41,28);
-}
+.intro-title-practice{
+  width: 100%;
 
-
-/* FORM */
-
-.formu-juego {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
-  display: none;
-  transform: scale(1);
-  margin: 0 auto 0 auto;
-  color: white;
+  justify-content: center;
+  margin: 5rem auto 0 auto;
+
+}
+
+.practice{
   width: 80%;
-}
-
-
-/* FORM SUBMIT BUTTON */
-
-.submit-btn-form {
-font-family: "Montserrat", sans-serif;
-color: black;
-background-color: white;
-border-radius: 30px;
-padding: 8px 25px 8px 25px;
-cursor: pointer;
-}
-
-.submit-btn-form:hover {
-  color: white;
-  background-color: rgb(218,41,28);
-}
-
-
-/* FORM ENGLISH WORD */
-
-.english-word {
-  pointer-events: none;
-  width: 5rem;
-}
-
-/* FORM DANISH WORD INPUT */
-
-.danish-word {
-  font-family: "Montserrat", sans-serif;
-  color: black;
-  background-color: white;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  border: none;
-  border-bottom: 1px solid black;
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-
-
-/* FORM - VIEW RESULTS BUTTON */
-
-.view-results {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: black;
-  background-color: white;
-  border-radius: 2rem;
-  border: 1px solid black;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
-  opacity: 1;
-  text-align: center;
-  margin: 10rem auto 2rem auto;
-  display: none;
-  position: absolute;
-  font-size: 2rem;
-  z-index: 10;
+  font-family: 'Timmana', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 auto 2rem auto;
+
 }
 
-.view-results:hover {
+.tenses-title:hover{
   color: white;
-  background-color: rgb(218,41,28);
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 768px){
-  body{
-    height: 50rem;
-  }
-  .intro-container{
-    height: 48rem;
-    margin: 1rem auto 0 auto;
-  }
-  .roadToDanish{
-    margin: 10rem auto 1rem auto;
-  }
-  .formu-juego{
-    transform: scale(2) translateY(5rem);
-  }
-  .view-results{
-      margin: 20rem auto 2rem auto;
-  }
+.conjunctions-title:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.family-title:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.work-title:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.free-time-title:hover{
+  color: white;
+  cursor: pointer;
 }
