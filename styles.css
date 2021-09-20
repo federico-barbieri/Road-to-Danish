@@ -19,42 +19,19 @@ html{
 
 .horizontal-rectangle{
   width: 90rem;
-  height: 10rem;
+  height: 7rem;
   background-color: white;
-  z-index: 5;
-  animation-name: rectanglehor;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-delay: 0.1s;
+  z-index: 1;
 }
 
 .vertical-rectangle{
-  width: 10rem;
+  width: 7rem;
   height: 50rem;
   background-color: white;
-  z-index: 6;
-  animation-name: rectanglever;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  z-index: 1;
+  transform: translate(10rem, -40rem);
 }
 
-@keyframes rectanglehor{
-  0% {transform: translate(-90rem, 1rem);}
-  25% {transform: translate(-45rem, 1rem);}
-  50% {transform: translate(0rem, 1rem);}
-  75% {transform: translate(45rem, 1rem);}
-  100% {transform: translate(90rem, 1rem);}
-}
-
-@keyframes rectanglever{
-  0% {transform: translate(10rem, -70rem);}
-  25% {transform: translate(10rem, -35rem);}
-  50% {transform: translate(10rem, 0rem);}
-  75% {transform: translate(10rem, 35rem);}
-  100% {transform: translate(10rem, 50rem);}
-}
 
 .intro-main-title{
   display: inline-block;
@@ -64,17 +41,17 @@ html{
   text-align: center;
   font-family: 'Timmana', sans-serif;
   font-stretch: semi-expanded;
+  z-index: 3;
 }
 
 .intro-title-practice{
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 5rem auto 0 auto;
-
+  z-index: 3;
 }
 
 .practice{
@@ -86,7 +63,7 @@ html{
   font-family: 'Timmana', sans-serif;
   font-size: 1.5rem;
   margin: 0 auto 2rem auto;
-
+  z-index: 3;
 }
 
 .tenses-title:hover{
