@@ -25,11 +25,17 @@ html{
 }
 
 .vertical-rectangle{
-  width: 7rem;
+  max-width: 7rem;
   height: 50rem;
   background-color: white;
   z-index: 1;
   transform: translate(10rem, -40rem);
+}
+
+@media only screen and (max-width: 900px){
+  .vertical-rectangle{
+    transform: translate(2rem, -40rem);
+  }
 }
 
 
