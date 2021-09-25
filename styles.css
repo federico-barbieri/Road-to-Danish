@@ -8,6 +8,11 @@ html{
   font-size: 20px;
 }
 
+a{
+  color: black;
+  text-decoration: none;
+}
+
 /* INTRO */
 
 #intro{
@@ -26,15 +31,25 @@ html{
 
 .vertical-rectangle{
   max-width: 7rem;
-  height: 50rem;
+  height: 60rem;
   background-color: white;
   z-index: 1;
-  transform: translate(10rem, -40rem);
+  transform: translate(10rem, -50rem);
 }
 
 @media only screen and (max-width: 900px){
   .vertical-rectangle{
-    transform: translate(2rem, -40rem);
+    transform: translate(2rem, -50rem);
+  }
+}
+
+@media only screen and (max-width: 790px){
+  .vertical-rectangle{
+    transform: translate(2rem, -50rem);
+    margin-top: -5rem;
+  }
+  .horizontal-rectangle{
+    transform: translateY(-5rem);
   }
 }
 
@@ -72,27 +87,42 @@ html{
   z-index: 3;
 }
 
+.adjectives-title{
+  text-decoration: none;
+}
+
+.adjectives-title:hover{
+  background-color: white;
+  color: rgb(218, 41, 28);
+  cursor: pointer;
+}
+
 .tenses-title:hover{
-  color: white;
+  background-color: white;
+  color: rgb(218, 41, 28);
   cursor: pointer;
 }
 
 .conjunctions-title:hover{
-  color: white;
+  background-color: white;
+  color: rgb(218, 41, 28);
   cursor: pointer;
 }
 
 .family-title:hover{
-  color: white;
+  background-color: white;
+  color: rgb(218, 41, 28);
   cursor: pointer;
 }
 
 .work-title:hover{
-  color: white;
+  background-color: white;
+  color: rgb(218, 41, 28);
   cursor: pointer;
 }
 
 .free-time-title:hover{
-  color: white;
+  background-color: white;
+  color: rgb(218, 41, 28);
   cursor: pointer;
 }
