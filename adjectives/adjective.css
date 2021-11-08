@@ -74,6 +74,18 @@ label {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
+@media only screen and (max-width: 1000px){
+  .adjForm1{
+    flex-direction: column;
+  }
+  .adjForm2{
+    flex-direction: column;
+  }
+  .adjForm3{
+    flex-direction: column;
+  }
+}
+
 /* SUBMIT BTN */
 
 .submitBtn{
