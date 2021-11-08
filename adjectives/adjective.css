@@ -1,0 +1,131 @@
+*{
+  paddin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 20px;
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+body{
+  background-color: rgb(218, 41, 28);
+  color: white;
+  text-align: center;
+  font-family: 'Timmana', sans-serif;
+  font-stretch: semi-expanded;
+}
+
+h1{
+  font-size: 5rem;
+  margin: 5rem auto 3rem auto;
+}
+
+/* FORMS */
+
+.adjForm1{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  margin: 1rem auto 0 auto;
+  font-size: 3rem;
+
+}
+
+.adjForm2{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  margin: 1rem auto 0 auto;
+  font-size: 3rem;
+}
+
+.adjForm3{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  margin: 1rem auto 0 auto;
+  font-size: 3rem;
+}
+
+input {
+color: rgb(218, 41, 28);
+background-color: white;
+padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+border: none;
+
+font-size: 1rem;
+}
+
+
+label {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* SUBMIT BTN */
+
+.submitBtn{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 5rem auto 0 auto;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  background-color: black;
+}
+
+.nextWordBtn{
+  display: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 5rem auto 0 auto;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nextWordBtn:hover{
+  background-color: black;
+}
+
+
+/* MESSAGE IF YOU INSERT THE CORRECT WORD */
+
+.nice{
+  display: none;
+  background-color: rgb(218, 41, 28);
+  opacity: 80%;
+}
+
+.niceh2{
+  font-size: 15rem;
+}
+
+/* MESSAGE IF YOU INSERT THE WRONG WORD */
+
+.oops{
+  display: none;
+  background-color: rgb(218, 41, 28);
+  opacity: 80%;
+}
+
+.oopsh2{
+  font-size: 15rem;
+}
