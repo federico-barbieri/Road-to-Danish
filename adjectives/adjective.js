@@ -100,40 +100,81 @@ const submitBtn = document.querySelector('.submitBtn');
 submitBtn.addEventListener('click', (e) =>{
   event.preventDefault();
   attempts+=1;
-  if(randomForm == 1 & form1pos3.value.toLowerCase().trim('') == selectedArray[2]){
+
+// IF FORM 1, USER INSERTED CORRECT WORD
+
+  if (randomForm == 1 & form1pos3.value.toLowerCase().trim('') == selectedArray[2]){
+    form1.style.display = "none";
+    form2.style.display = "none";
+    form3.style.display = "none";
     correctWords+=1;
     submitBtn.style.display = "none";
     niceMsg.style.display = "flex";
     nextWordBtn.style.display = "inline";
-  } else if (randomForm == 1 & form1pos3.value.toLowerCase().trim('') !== selectedArray[2]){
+  }
+
+// IF FORM 1 AND USER INSERTED INCORRECT WORD
+
+  else if (randomForm == 1 & form1pos3.value.toLowerCase().trim('') !== selectedArray[2]){
     wrongWords+=1;
+    form1.style.display = "none";
+    form2.style.display = "none";
+    form3.style.display = "none";
     submitBtn.style.display = "none";
     oops.style.display = "flex";
     nextWordBtn.style.display = "inline";
+
   }
+
+// IF FORM 2, CORRECT WORD
 
   else if (randomForm == 2 & form2pos2.value.toLowerCase().trim('') == selectedArray[1]){
+    form1.style.display = "none";
+    form2.style.display = "none";
+    form3.style.display = "none";
     correctWords+=1;
     submitBtn.style.display = "none";
     niceMsg.style.display = "flex";
     nextWordBtn.style.display = "inline";
-  } else if (randomForm == 2 & form2pos2.value.toLowerCase().trim('') !== selectedArray[1]){
+    }
+
+// IF FORM 2 AND INCORRECT WORD
+
+  else if (randomForm == 2 & form2pos2.value.toLowerCase().trim('') !== selectedArray[1]){
+    form1.style.display = "none";
+    form2.style.display = "none";
+    form3.style.display = "none";
     wrongWords+=1;
     submitBtn.style.display = "none";
     oops.style.display = "flex";
     nextWordBtn.style.display = "inline";
+
   }
 
-  else if (randomForm == 3 & form3pos1.value.toLowerCase().trim('') == selectedArray[0]) {
+  // IF FORM 3, CORRECT WORD
+
+  else if (randomForm == 3 & form3pos1.value.toLowerCase().trim('') == selectedArray[0]){
+    form1.style.display = "none";
+    form2.style.display = "none";
+    form3.style.display = "none";
     correctWords+=1;
     submitBtn.style.display = "none";
     niceMsg.style.display = "flex";
     nextWordBtn.style.display = "inline";
-  } else if (randomForm == 3 & form3pos1.value.toLowerCase().trim('') !== selectedArray[0]){
+
+  }
+
+  // IF FORM 3, INCORRECT WORD
+
+  else if (randomForm == 3 & form3pos1.value.toLowerCase().trim('') !== selectedArray[0]){
+    form1.style.display = "none";
+    form2.style.display = "none";
+    form3.style.display = "none";
     wrongWords+=1;
     submitBtn.style.display = "none";
     oops.style.display = "flex";
     nextWordBtn.style.display = "inline";
+
   }
 
 
@@ -143,9 +184,6 @@ submitBtn.addEventListener('click', (e) =>{
 
 nextWordBtn.addEventListener('click', (e) => {
   event.preventDefault();
-  form1.style.display = "none";
-  form2.style.display = "none";
-  form3.style.display = "none";
   submitBtn.style.display = "inline";
   nextWordBtn.style.display = "none";
   niceMsg.style.display = "none";
@@ -153,7 +191,7 @@ nextWordBtn.addEventListener('click', (e) => {
   form1pos3.value = "";
   form2pos2.value = "";
   form3pos1.value = "";
-  console.log(attempts);
+
   placeElementsInForm();
 
   // SEE RESULTS AFTER X ATTEMPS
