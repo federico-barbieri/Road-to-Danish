@@ -13,49 +13,24 @@ a{
   text-decoration: none;
 }
 
+
+
 /* INTRO */
 
 #intro{
   width: 100%;
   height: 50rem;
-  background-color: rgb(218, 41, 28);
+  background: url("danishpic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
-}
-
-.horizontal-rectangle{
-  width: 90rem;
-  height: 7rem;
-  background-color: white;
-  z-index: 1;
-}
-
-.vertical-rectangle{
-  max-width: 7rem;
-  height: 60rem;
-  background-color: white;
-  z-index: 1;
-  transform: translate(10rem, -50rem);
-}
-
-@media only screen and (max-width: 900px){
-  .vertical-rectangle{
-    transform: translate(2rem, -50rem);
-  }
-}
-
-@media only screen and (max-width: 790px){
-  .vertical-rectangle{
-    transform: translate(2rem, -50rem);
-    margin-top: -5rem;
-  }
-  .horizontal-rectangle{
-    transform: translateY(-5rem);
-  }
 }
 
 
 .intro-main-title{
   display: inline-block;
+  color: rgb(218, 41, 28);
   font-size: 6rem;
   margin: 1rem auto 1rem auto;
   text-shadow: 5px 2px white;
@@ -64,6 +39,8 @@ a{
   font-stretch: semi-expanded;
   z-index: 3;
 }
+
+
 
 .intro-title-practice{
   width: 100%;
