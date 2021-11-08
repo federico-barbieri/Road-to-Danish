@@ -156,11 +156,11 @@ nextWordBtn.addEventListener('click', (e) => {
   console.log(attempts);
   placeElementsInForm();
 
-  // SEE RESULTS AFTER 5 ATTEMPS
+  // SEE RESULTS AFTER X ATTEMPS
 
   if (attempts === 5){
-    alert(`After 5 attempts, you have ${correctWords} correct words and ${wrongWords} incorrect words.`);
-  }
+    alert(`After 5 attempts, you have ${correctWords} correct words and ${wrongWords} incorrect words.`);}
+
 
 })
 
