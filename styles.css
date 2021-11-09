@@ -27,11 +27,6 @@ a{
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1000px){
-  #intro{
-    height: 100vh;
-  }
-}
 
 
 
@@ -74,6 +69,19 @@ a{
 h3{
   color: white;
     text-shadow: 3px 2px black;
+}
+
+@media only screen and (max-width: 1000px){
+  #intro{
+    height: 100vh;
+  }
+  .practice{
+    font-size: 3rem;
+  }
+  h3{
+    color: rgb(218, 41, 28);
+      text-shadow: 3px 2px black;
+  }
 }
 
 .adjectives-title{
