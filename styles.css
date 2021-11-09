@@ -28,6 +28,7 @@ a{
 }
 
 
+
 .intro-main-title{
   display: inline-block;
   color: rgb(218, 41, 28);
@@ -64,6 +65,11 @@ a{
   z-index: 3;
 }
 
+h3{
+  color: white;
+    text-shadow: 3px 2px black;
+}
+
 .adjectives-title{
   text-decoration: none;
 }
@@ -79,6 +85,13 @@ a{
   color: rgb(218, 41, 28);
   cursor: pointer;
 }
+
+.tenses-title:hover{
+  background-color: white;
+  color: rgb(218, 41, 28);
+  cursor: pointer;
+}
+
 
 .conjunctions-title:hover{
   background-color: white;
