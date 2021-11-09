@@ -29,10 +29,16 @@ p{
   font-size: 2rem;
 }
 
-span{
+.frankrig1{
   border: 1px solid white;
   padding: 0.8rem 1.5rem;
 }
+
+.frankrig2{
+  border: 1px solid white;
+  padding: 0.8rem 1.5rem;
+}
+
 
 .testBtn{
   padding: 0.5rem 2rem 0.5rem 2rem;
@@ -48,6 +54,8 @@ span{
   background-color: black;
 }
 
+
+
 /* examples */
 
 .tyskland{
@@ -55,6 +63,7 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .marie{
@@ -62,6 +71,7 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .cykler{
@@ -69,6 +79,7 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .arbejder{
@@ -76,6 +87,7 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .underviser{
@@ -83,12 +95,167 @@ span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
-/* NEXT BUTTON */
+/* IKKE and VEL btns */
 
-.submitBtn{
-  display: none;
+.ikkeBtn1{
+
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ikkeBtn1:hover{
+  background-color: black;
+}
+
+.ikkeBtn2{
+
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ikkeBtn2:hover{
+  background-color: black;
+}
+
+.ikkeBtn3{
+
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ikkeBtn3:hover{
+  background-color: black;
+}
+
+.ikkeBtn4{
+
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ikkeBtn4:hover{
+  background-color: black;
+}
+
+.ikkeBtn5{
+
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ikkeBtn5:hover{
+  background-color: black;
+}
+
+.velBtn1{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.velBtn1:hover{
+  background-color: black;
+}
+
+.velBtn2{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.velBtn2:hover{
+  background-color: black;
+}
+
+.velBtn3{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.velBtn3:hover{
+  background-color: black;
+}
+
+.velBtn4{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.velBtn4:hover{
+  background-color: black;
+}
+
+.velBtn5{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.velBtn5:hover{
+  background-color: black;
+}
+
+.nextBtn{
+    display: none;
   padding: 0.5rem 2rem 0.5rem 2rem;
   margin: 2.5rem auto 0 auto;
   font-size: 2rem;
@@ -98,6 +265,7 @@ span{
   cursor: pointer;
 }
 
-.submitBtn:hover{
+.nextBtn:hover{
+
   background-color: black;
 }
