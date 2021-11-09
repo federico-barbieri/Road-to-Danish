@@ -27,12 +27,18 @@ a{
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1000px){
+  #intro{
+    height: auto;
+  }
+}
+
 
 
 .intro-main-title{
   display: inline-block;
   color: rgb(218, 41, 28);
-  font-size: 6rem;
+  font-size: 6.5rem;
   margin: 1rem auto 1rem auto;
   text-shadow: 5px 2px white;
   text-align: center;
@@ -60,7 +66,7 @@ a{
   align-items: center;
   justify-content: center;
   font-family: 'Timmana', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 auto 2rem auto;
   z-index: 3;
 }
