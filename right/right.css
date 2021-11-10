@@ -13,6 +13,7 @@ body{
   text-align: center;
   font-family: 'Timmana', sans-serif;
   font-stretch: semi-expanded;
+  height: auto;
 }
 
 h1{
