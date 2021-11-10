@@ -189,6 +189,9 @@ p{
     margin: 2rem auto 2rem auto;
     font-size: 1.5rem;
   }
+  .negative{
+    margin: 3rem auto 2rem auto;
+  }
   .testBtn{
     margin: 3rem auto 0 auto;
   }
