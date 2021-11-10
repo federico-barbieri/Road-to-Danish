@@ -16,6 +16,7 @@ let underviser = document.querySelector('.underviser');
 let endnu = document.querySelector('.endnu');
 let single = document.querySelector('.single');
 let norreport = document.querySelector('.norreport');
+let fredag = document.querySelector('.fredag'); 
 
 
 // IKKE BTNS
@@ -30,7 +31,7 @@ let velBTN = document.querySelector('.velBTN');
 const nextBtn = document.querySelector('.nextBtn');
 
 
-let examples = [tyskland, marie, arbejder, cykler, underviser, endnu, single];
+let examples = [tyskland, marie, arbejder, cykler, underviser, endnu, single, fredag];
 
 // function to choose a random example to practice
 
