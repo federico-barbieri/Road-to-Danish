@@ -196,4 +196,16 @@ p{
     margin: 8rem auto 0 auto;
     font-size: 2rem;
   }
+  .sentence{
+    font-size: 2rem;
+  }
+  .ikkeBTN{
+    font-size: 2rem;
+  }
+  .velBTN{
+    font-size: 2rem;
+  }
+  .nextBtn{
+    font-size: 2rem;
+  }
 }
