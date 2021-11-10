@@ -13,30 +13,24 @@ let marie = document.querySelector('.marie');
 let cykler = document.querySelector('.cykler');
 let arbejder = document.querySelector('.arbejder');
 let underviser = document.querySelector('.underviser');
+let endnu = document.querySelector('.endnu');
+let single = document.querySelector('.single');
+let norreport = document.querySelector('.norreport');
 
 
 // IKKE BTNS
 
-const ikkeBtn1 = document.querySelector('.ikkeBtn1');
-const ikkeBtn2 = document.querySelector('.ikkeBtn2');
-const ikkeBtn3 = document.querySelector('.ikkeBtn3');
-const ikkeBtn4 = document.querySelector('.ikkeBtn4');
-const ikkeBtn5 = document.querySelector('.ikkeBtn5');
-
+let ikkeBTN = document.querySelector('.ikkeBTN');
 // VEL BTNS
 
-const velBtn1 = document.querySelector('.velBtn1');
-const velBtn2 = document.querySelector('.velBtn2');
-const velBtn3 = document.querySelector('.velBtn3');
-const velBtn4 = document.querySelector('.velBtn4');
-const velBtn5 = document.querySelector('.velBtn5');
+let velBTN = document.querySelector('.velBTN');
 
 // NEXT BTN
 
 const nextBtn = document.querySelector('.nextBtn');
 
 
-let examples = [tyskland, marie, arbejder, cykler, underviser];
+let examples = [tyskland, marie, arbejder, cykler, underviser, endnu, single];
 
 // function to choose a random example to practice
 
@@ -67,6 +61,8 @@ testBtn.addEventListener('click', () =>{
 
   positiveOrNegative = randomPractice();
   examples[positiveOrNegative].style.display = "flex";
+  ikkeBTN.style.display = "inline";
+  velBTN.style.display = "inline";
   console.log(positiveOrNegative);
 
 })
@@ -77,216 +73,52 @@ let correctWords = 0;
 let incorrectWords = 0;
 let attempts = 0;
 
+// event listeners for the btns
 
-// check if the user picked the correct btn
-
-ikkeBtn1.addEventListener('click', (e) =>{
+ikkeBTN.addEventListener('click', (e) =>{
   event.preventDefault();
-  nextBtn.style.display = "inline";
+  nextBtn.style.display = "block";
 
-   if(positiveOrNegative == 0 || positiveOrNegative == 2 || positiveOrNegative == 4){
+   if (positiveOrNegative % 2 == 0){
+
      console.log("NICE");
      correctWords+=1;
       attempts+=1;
-     ikkeBtn1.style.backgroundColor = "green";
+     ikkeBTN.style.backgroundColor = "green";
    } else{
      console.log("WRONG");
      incorrectWords+=1;
-     attempts+=1;
-     ikkeBtn1.style.backgroundColor = "red";
+      attempts+=1;
+     ikkeBTN.style.backgroundColor = "red";
    }
  })
 
-
- ikkeBtn2.addEventListener('click', (e) =>{
+ velBTN.addEventListener('click', (e) => {
    event.preventDefault();
-   nextBtn.style.display = "inline";
+   nextBtn.style.display = "block";
 
-    if(positiveOrNegative == 0 || positiveOrNegative == 2 || positiveOrNegative == 4){
-      console.log("NICE");
+    if (positiveOrNegative % 2 !== 0){
+
+
       correctWords+=1;
        attempts+=1;
-      ikkeBtn2.style.backgroundColor = "green";
+      velBTN.style.backgroundColor = "green";
     } else{
-      console.log("WRONG");
+
       incorrectWords+=1;
        attempts+=1;
-      ikkeBtn2.style.backgroundColor = "red";
-    }
-  })
-
-
-
-  ikkeBtn3.addEventListener('click', (e) =>{
-    event.preventDefault();
-    nextBtn.style.display = "inline";
-
-     if(positiveOrNegative == 0 || positiveOrNegative == 2 || positiveOrNegative == 4){
-       console.log("NICE");
-       correctWords+=1;
-        attempts+=1;
-       ikkeBtn3.style.backgroundColor = "green";
-     } else{
-       console.log("WRONG");
-       incorrectWords+=1;
-        attempts+=1;
-       ikkeBtn3.style.backgroundColor = "red";
-     }
-   })
-
-
-
-   ikkeBtn4.addEventListener('click', (e) =>{
-     event.preventDefault();
-     nextBtn.style.display = "inline";
-
-      if(positiveOrNegative == 0 || positiveOrNegative == 2 || positiveOrNegative == 4){
-        console.log("NICE");
-        correctWords+=1;
-         attempts+=1;
-        ikkeBtn4.style.backgroundColor = "green";
-      } else{
-        console.log("WRONG");
-        incorrectWords+=1;
-         attempts+=1;
-        ikkeBtn4.style.backgroundColor = "red";
-      }
-    })
-
-
-
-    ikkeBtn5.addEventListener('click', (e) =>{
-      event.preventDefault();
-      nextBtn.style.display = "inline";
-
-       if(positiveOrNegative == 0 || positiveOrNegative == 2 || positiveOrNegative == 4){
-         console.log("NICE");
-         correctWords+=1;
-          attempts+=1;
-         ikkeBtn5.style.backgroundColor = "green";
-       } else{
-         console.log("WRONG");
-         incorrectWords+=1;
-          attempts+=1;
-         ikkeBtn5.style.backgroundColor = "red";
-       }
-     })
-
- velBtn1.addEventListener('click', (e) => {
-   event.preventDefault();
-   nextBtn.style.display = "inline";
-
-    if(positiveOrNegative == 1 || positiveOrNegative == 3){
-      console.log("NICE");
-      correctWords+=1;
-       attempts+=1;
-      velBtn1.style.backgroundColor = "green";
-    } else{
-      console.log("WRONG");
-      incorrectWords+=1;
-       attempts+=1;
-      velBtn1.style.backgroundColor = "red";
+      velBTN.style.backgroundColor = "red";
     }
  })
 
- velBtn2.addEventListener('click', (e) => {
-   event.preventDefault();
-   nextBtn.style.display = "inline";
+// check if the user picked the correct btn
 
-    if(positiveOrNegative == 1 || positiveOrNegative == 3){
-      console.log("NICE");
-      correctWords+=1;
-       attempts+=1;
-      velBtn2.style.backgroundColor = "green";
-    } else{
-      console.log("WRONG");
-      incorrectWords+=1;
-       attempts+=1;
-      velBtn2.style.backgroundColor = "red";
-    }
- })
-
- velBtn2.addEventListener('click', (e) => {
-   event.preventDefault();
-   nextBtn.style.display = "inline";
-
-    if(positiveOrNegative == 1 || positiveOrNegative == 3){
-      console.log("NICE");
-      correctWords+=1;
-       attempts+=1;
-      velBtn2.style.backgroundColor = "green";
-    } else{
-      console.log("WRONG");
-      incorrectWords+=1;
-       attempts+=1;
-      velBtn2.style.backgroundColor = "red";
-    }
- })
-
- velBtn3.addEventListener('click', (e) => {
-   event.preventDefault();
-   nextBtn.style.display = "inline";
-
-    if(positiveOrNegative == 1 || positiveOrNegative == 3){
-      console.log("NICE");
-      correctWords+=1;
-       attempts+=1;
-      velBtn3.style.backgroundColor = "green";
-    } else{
-      console.log("WRONG");
-      incorrectWords+=1;
-       attempts+=1;
-      velBtn3.style.backgroundColor = "red";
-    }
- })
-
- velBtn4.addEventListener('click', (e) => {
-   event.preventDefault();
-   nextBtn.style.display = "inline";
-
-    if(positiveOrNegative == 1 || positiveOrNegative == 3){
-      console.log("NICE");
-      correctWords+=1;
-       attempts+=1;
-      velBtn4.style.backgroundColor = "green";
-    } else{
-      console.log("WRONG");
-      incorrectWords+=1;
-       attempts+=1;
-      velBtn4.style.backgroundColor = "red";
-    }
- })
-
- velBtn5.addEventListener('click', (e) => {
-   event.preventDefault();
-   nextBtn.style.display = "inline";
-
-    if(positiveOrNegative == 1 || positiveOrNegative == 3){
-      console.log("NICE");
-      correctWords+=1;
-       attempts+=1;
-      velBtn5.style.backgroundColor = "green";
-    } else{
-      console.log("WRONG");
-      incorrectWords+=1;
-       attempts+=1;
-      velBtn5.style.backgroundColor = "red";
-    }
- })
 
  nextBtn.addEventListener('click', () => {
    nextBtn.style.display = "none";
    examples[positiveOrNegative].style.display = "none";
-   ikkeBtn1.style.backgroundColor = "transparent";
-   ikkeBtn2.style.backgroundColor = "transparent";
-   ikkeBtn3.style.backgroundColor = "transparent";
-   ikkeBtn4.style.backgroundColor = "transparent";
-   ikkeBtn5.style.backgroundColor = "transparent";
-   velBtn1.style.backgroundColor = "transparent";
-   velBtn2.style.backgroundColor = "transparent";
-   velBtn3.style.backgroundColor = "transparent";
-   velBtn4.style.backgroundColor = "transparent";
-   velBtn5.style.backgroundColor = "transparent";
+   ikkeBTN.style.backgroundColor = "transparent";
+   velBTN.style.backgroundColor = "transparent";
 
    positiveOrNegative = randomPractice();
    examples[positiveOrNegative].style.display = "flex";
@@ -294,5 +126,5 @@ ikkeBtn1.addEventListener('click', (e) =>{
 
    if (attempts === 5){
      alert(`After 5 attempts, you got ${correctWords} correct words and ${incorrectWords} incorrect words.`);}
-   
+
  })
