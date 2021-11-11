@@ -1,0 +1,118 @@
+*{
+  paddin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 20px;
+}
+
+body{
+  background-color: rgb(218, 41, 28);
+  color: white;
+  text-align: center;
+  font-family: 'Timmana', sans-serif;
+  font-stretch: semi-expanded;
+}
+
+h1{
+font-size: 5rem;
+margin: 5rem auto 3rem auto;
+}
+
+.startBtn{
+  display: "inline";
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  margin: 0 auto 0 auto;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.startBtn:hover{
+  background-color: black;
+}
+
+.form{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-size: 2.5rem;
+}
+
+.danishNum{
+  color: rgb(218, 41, 28);
+  background-color: white;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: none;
+
+  font-size: 1rem;
+}
+
+.submitBtn{
+  display: none;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  margin: 5rem auto 0 auto;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  background-color: black;
+}
+
+/* MESSAGE IF YOU INSERT THE CORRECT WORD */
+
+.nice{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(218, 41, 28);
+  opacity: 60%;
+  margin: 0rem auto 0 auto;
+}
+
+.niceh2{
+  font-size: 12rem;
+}
+
+/* MESSAGE IF YOU INSERT THE WRONG WORD */
+
+.oops{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(218, 41, 28);
+  opacity: 60%;
+  margin: 0rem auto 0 auto;
+}
+
+.oopsh2{
+  font-size: 12rem;
+}
+
+.nextBtn{
+  display: none;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  margin: 0rem auto 0 auto;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nextBtn:hover{
+  background-color: black;
+}
