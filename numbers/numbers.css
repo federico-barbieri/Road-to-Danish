@@ -116,3 +116,24 @@ margin: 5rem auto 3rem auto;
 .nextBtn:hover{
   background-color: black;
 }
+
+@media only screen and (max-width: 1000px){
+  h1{
+    margin: 10rem auto 1rem auto;
+  }
+  .startBtn{
+    font-size: 3rem;
+  }
+  .nextBtn{
+    font-size: 3rem;
+  }
+  .submitBtn{
+    font-size: 3rem;
+  }
+  .label{
+    font-size: 3rem;
+  }
+  .danishNum{
+    font-size: 3rem;
+  }
+}
