@@ -6,8 +6,10 @@ let positiveAdj = [["sød", "sødt", "søde"], ["ny", "nyt", "nye"], ["fed", "fe
                     ["kold", "koldt", "kolde"], ["ung", "ungt", "unge"], ["stor", "stort", "store"], ["lang", "langt", "lange"],
                     ["god", "godt", "gode"], ["lille", "lille", "små"], ["gammel", "gammelt", "gamle"],
                     ["praktisk", "praktisk", "praktiske"], ["hjemmelavet", "hjemmelavet", "Hjemmelavede"],
-                    ["spændende", "spændende", "spændende"]]
+                    ["spændende", "spændende", "spændende"], ["hård", "hårdt", "hårde"], ["lækker", "lækkert", "lækre"],
+                    ["vild", "vildt", "vilde"]]
 
+//   æ ø å
 
 //  A FUNCTION THAT SELECTS WHICH FORM WILL BE DISPLAYED
 
