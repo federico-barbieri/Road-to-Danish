@@ -19,7 +19,17 @@ let numbers = {
   seventeen: "sytten",
   eighteen: "atten",
   nineteen: "nitten",
-  twenty: "tyve"
+  twenty: "tyve",
+  twenty_one: "enogtyve",
+  twenty_two: "toogtyve",
+  twenty_three: "treogtyve",
+  twenty_four: "fireogtyve",
+  twenty_five: "femogtyve",
+  twenty_six: "seksogtyve",
+  twenty_seven: "syvogtyve",
+  twenty_eight: "ooteogtyve",
+  twenty_nine: "niogtyve",
+  thirty: "tredive"
 }
 
 let fromRandomToStable;
@@ -55,6 +65,8 @@ const niceMsg = document.querySelector('.nice');
 
 const oops = document.querySelector('.oops');
 
+const correction = document.querySelector('.correction');
+
 // next btn
 
 const nextBtn = document.querySelector('.nextBtn');
@@ -88,6 +100,7 @@ submitBtn.addEventListener('click', () => {
     correctWords+=1;
   } else {
     oops.style.display = "flex";
+    correction.innerHTML = `Correct word: ${Object.values(numbers)[fromRandomToStable]}.`;
     nextBtn.style.display = "inline";
     wrongWords+=1;
   }
