@@ -27,9 +27,19 @@ let numbers = {
   twenty_five: "femogtyve",
   twenty_six: "seksogtyve",
   twenty_seven: "syvogtyve",
-  twenty_eight: "ooteogtyve",
+  twenty_eight: "otteogtyve",
   twenty_nine: "niogtyve",
-  thirty: "tredive"
+  thirty: "tredive",
+  thirty_one: "enogtredive",
+  thirty_two: "toogtredive",
+  thirty_three: "treogtredive",
+  thirty_four: "fireogtredive",
+  thirty_five: "femogtredive",
+  thirty_six: "seksogtredive",
+  thirty_seven: "syvogtredive",
+  thirty_eight: "otteogtredive",
+  thirty_nine: "niogtredive",
+  forty: "fyrre",
 }
 
 let fromRandomToStable;
